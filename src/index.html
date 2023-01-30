@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Food delivery app"
+})
+
+<body>
+
+	<div class="wrapper">
+		<!-- wrapper нужен, чтобы в файле стиле прижать подвал к низу через flexbox -->
+
+		<div class="content">
+			<!-- Здесь весь контент включая шапку сайта -->
+
+			@@include('html/1_header.html',{})
+
+			<main class="main">
+				@@include('html/2_download.html',{})
+				@@include('html/3_work-app.html',{})
+			</main>
+
+		</div>
+
+		@@include('html/4_footer.html',{})
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

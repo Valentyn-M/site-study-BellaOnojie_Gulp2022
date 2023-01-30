@@ -1,0 +1,14 @@
+// Функция перевода пикселей в число
+@function px-to-number($lh, $fz) {     //  line-height ($lh) делим на font-size ($fz)
+	@return calc($lh / $fz);
+ }
+ // Применение
+ // font-size: px-to-number(80px, 48px);
+
+
+ // Функция перевода пикселей в rem
+@function px-to-rem($px, $context: 16px) {     //  По умолчанию 16px = 1rem = 100% = 12pt
+	@return calc($px / $context) * 1rem;
+ }
+ // Применение
+ // font-size: px-to-rem(24px);

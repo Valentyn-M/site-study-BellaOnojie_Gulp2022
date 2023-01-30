@@ -1,0 +1,94 @@
+.download {
+	background: url('@img/bg-app.jpg') center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.download__block {
+	position: relative;
+	text-align: center;
+	padding: 6% 15px 12%;
+}
+
+.download__subtitle {
+	color: $textLight;
+	font-weight: 700;
+	line-height: px-to-number(32px, 24px);
+	margin-bottom: 20px;
+	letter-spacing: 0.1px;
+}
+
+.download__title {
+	font-weight: 700;
+	font-size: px-to-rem(48px);
+	line-height: px-to-number(80px, 48px);
+	letter-spacing: 0.2px;
+	color: $white;
+	margin-bottom: 20px;
+}
+
+.download__text {
+	line-height: px-to-number(38px, 24px);
+	letter-spacing: 0.2px;
+	color: $textLight;
+	margin-bottom: 55px;
+}
+
+.download__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 34px;
+	row-gap: 34px;
+	justify-content: center;
+}
+
+.btn {
+	font-weight: 700;
+	line-height: px-to-number(36px, 24px);
+	letter-spacing: 0.1px;
+	color: $white;
+	width: 236px;
+	height: 58px;
+	border: 1px solid $white;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+
+	&:hover, &:focus {
+		background: $orangeActive;
+		border-color: $orangeActive;
+	}
+}
+
+.btn-orange {
+	background: $orange;
+	border-color: $orange;
+}
+
+
+@media (max-width: 767px) {
+	.download__title {
+		font-size: px-to-rem(40px);
+	}
+}
+
+@media (max-width: 480px) {
+	.download__title {
+		font-size: px-to-rem(36px);
+	}
+}

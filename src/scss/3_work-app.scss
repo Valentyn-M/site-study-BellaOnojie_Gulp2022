@@ -1,0 +1,183 @@
+.workapp {
+	padding: 55px 0;
+}
+
+.workapp__block {
+	padding: 0 8%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 65px;
+}
+
+.title-for-blocks {
+	font-weight: 600;
+	font-size: px-to-rem(44px);
+	line-height: 1.2;
+	letter-spacing: 0.1px;
+	color: $black;
+	opacity: 0.8;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.item-1 {
+	order: 2;
+}
+.item-2 {
+	order: 1;
+}
+.item-3 {
+	order: 3;
+}
+.item-4 {
+	order: 4;
+}
+.item-5 {
+	order: 6;
+}
+.item-6 {
+	order: 5;
+}
+
+.item-text {
+	align-self: center;
+}
+
+.item__subtitle {
+	font-weight: 700;
+	font-size: px-to-rem(24px);
+	line-height: px-to-number(36px, 24px);
+	letter-spacing: 0.1px;
+	color: $orange;
+	margin-bottom: 15px;
+}
+
+.item__title {
+	font-weight: 700;
+	font-size: px-to-rem(40px);
+	line-height: px-to-number(57px, 40px);
+	letter-spacing: 0.2px;
+	color: $textDark;
+	margin-bottom: 15px;
+}
+
+.item__description {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 38px;
+	font-size: px-to-rem(24px);
+	line-height: px-to-number(38px, 24px);
+	letter-spacing: 0.2px;
+	color: $textGrey;
+}
+
+.item-img {
+	justify-self: center;
+}
+
+@media (max-width: 992px) {
+	.workapp__block {
+		padding: 0 5%;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.workapp__block {
+		padding: 0 3%;
+		column-gap: 20px;
+	}
+
+	.title-for-blocks {
+		font-size: px-to-rem(38px);
+	}
+
+	.item__subtitle {
+		font-size: px-to-rem(22px);	
+	}
+
+	.item__title {
+		font-size: px-to-rem(32px);		
+	}
+
+	.item__description {
+		font-size: px-to-rem(22px);	
+	}
+}
+
+@media (max-width: 576px) {
+
+	.workapp__block {
+		padding: 0;
+		column-gap: 20px;
+	}
+
+	.title-for-blocks {
+		font-size: px-to-rem(32px);
+	}
+
+	.item__subtitle {
+		font-size: px-to-rem(20px);	
+	}
+
+	.item__title {
+		font-size: px-to-rem(28px);		
+	}
+
+	.item__description {
+		font-size: px-to-rem(20px);	
+	}
+}
+
+@media (max-width: 480px) {
+
+	.workapp {
+		padding: 50px 0;
+	}
+	
+	.workapp__block {
+		grid-template-columns: 1fr;
+		row-gap: 50px;
+		text-align: center;
+		row-gap: 35px;
+	}
+
+	.item-1 {
+		order: 1;
+	}
+	.item-2 {
+		order: 2;
+	}
+	.item-5 {
+		order: 5;
+	}
+	.item-6 {
+		order: 6;
+	}
+	
+	.title-for-blocks {
+		font-size: px-to-rem(32px);
+		margin-bottom: 50px;
+	}
+
+	.item__subtitle {
+		font-size: px-to-rem(20px);	
+	}
+
+	.item__title {
+		font-size: px-to-rem(28px);		
+	}
+
+	.item__description {
+		font-size: px-to-rem(20px);	
+	}
+
+	.item-text {
+		padding-top: 30px;
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+}
